@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  width: 1440px;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 26px;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  align-items:center;
+}
+.header_nav_list {
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+}
+.header_nav_item {
+  list-style: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+}
+.header_list:hover{
+  border-bottom: 1px solid rgb(31, 213, 28);
+}
+.logo_button {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  align-items: center;
+}
+.btn {
+  background-color: #339933;
+  color: white;
+  padding: 17px;
+  border: 2px solid #339933;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.menu__btn{
+	display: flex;
+	align-items: center;
+	visibility: hidden;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	z-index: 1;
+}
+
+#menu__toggle {
+	opacity: 0;
+}
+
+
+.menu__box{
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	margin: 0;
+	right: -400px;
+	height: 450px;
+	padding: 50px 0;
+	width: 300px;
+	background-color: aliceblue;
+	transition-duration: .25s;
+}
+
+.menu__item {
+	display: block;
+	padding: 30px 30px;
+	color: grey;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 250;
+}
+
+
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 25px;
+	background-color: black;
+	transition-duration: .25s;
+}
+
+.menu__btn > span::after {
+	content: '';
+	top: 8px;
+}
+
+.menu__btn > span::before {
+	content: '';
+	top: -8px;
+}
+
+.menu__btn {
+	display: flex;
+	align-items: center;
+	position: fixed;
+
+	top: 26px;
+	right: 10px;
+}
+
+
+#menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+}
+
+
+#menu__toggle:checked ~ .menu__box {
+	visibility: visible;
+	right: -40px;
+}
+
+@media  screen and (max-width: 720px){
+	.header{
+		width:720px;
+	}
+	.header_nav_list{
+		display: none;
+	}
+	.menu__btn{
+		visibility: visible;
+	}
+}

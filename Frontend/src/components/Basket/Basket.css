@@ -1,0 +1,133 @@
+.basket_main {
+  width: 1440px;
+  margin-left: 20px;
+  
+}
+.basket_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 824px;
+}
+.basket_img {
+  border-radius: 15%;
+}
+.basket_title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.title_count {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  width:250px;
+}
+.basket_count {
+  display: flex;
+  width: 130px;
+  height: 40px;
+  justify-content: space-around;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  align-items: center;
+}
+.basket_count p {
+  font-size: 25px;
+}
+.basket_position {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+.backsite {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+}
+.direction {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+}
+.basket_content {
+  display: flex;
+  justify-content: space-between;
+}
+.goods_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.goods_order {
+  border: 2px solid #000000;
+  border-radius: 21px;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.order_title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+.order_sum {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+.sum_text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+.goods_sum {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+.order_input {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  width: 350px;
+  padding: 10px;
+}
+.goods_order .btn {
+  width: 370px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+.basket_wrapper .discont_price, .price{
+  width:40px;
+}
+@media screen and (max-width:720px) {
+  .basket_main{
+    width:720px;
+  }
+  .basket_content {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    height: 1400px;
+  }
+  .basket_content__wrap{
+    width:680px;
+    margin:0 auto;
+  }
+  
+  
+}
